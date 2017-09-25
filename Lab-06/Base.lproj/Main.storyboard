@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bQ8-V4-KLm">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="baL-Ci-mUq">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
                         </subviews>
@@ -38,7 +38,7 @@
                     <navigationItem key="navigationItem" id="DcE-8e-r1F">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OT9-Bd-gWl">
                             <connections>
-                                <segue destination="ioI-QG-esS" kind="show" id="qBs-YB-hoL"/>
+                                <segue destination="ioI-QG-esS" kind="show" identifier="juegoSegue" id="qBs-YB-hoL"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -59,27 +59,34 @@
                         <viewControllerLayoutGuide type="bottom" id="yBs-rf-hyX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GdS-2v-iTn">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AMp-qo-xo0">
-                                <rect key="frame" x="67" y="84" width="240" height="150"/>
+                                <rect key="frame" x="87" y="84" width="240" height="150"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="16Q-md-uR5"/>
                                     <constraint firstAttribute="width" constant="240" id="Mly-Uc-ISO"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Titulo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C4d-QL-xgx">
-                                <rect key="frame" x="67" y="254" width="240" height="30"/>
+                                <rect key="frame" x="87" y="254" width="240" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auX-yd-BGL">
-                                <rect key="frame" x="159.5" y="304" width="55" height="30"/>
+                                <rect key="frame" x="179.66666666666666" y="304" width="55" height="30"/>
                                 <state key="normal" title="Agregar"/>
                                 <connections>
                                     <action selector="agregarTapped:" destination="ioI-QG-esS" eventType="touchUpInside" id="3F9-Gx-eDc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8K-GB-JgS">
+                                <rect key="frame" x="179.66666666666666" y="349" width="55" height="30"/>
+                                <state key="normal" title="Eliminar"/>
+                                <connections>
+                                    <action selector="eliminarTapped:" destination="ioI-QG-esS" eventType="touchUpInside" id="Dw0-K5-FPS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -89,8 +96,10 @@
                             <constraint firstItem="C4d-QL-xgx" firstAttribute="centerX" secondItem="GdS-2v-iTn" secondAttribute="centerX" id="6Yy-iq-ZZj"/>
                             <constraint firstItem="AMp-qo-xo0" firstAttribute="centerX" secondItem="GdS-2v-iTn" secondAttribute="centerX" id="GtB-Qb-1iC"/>
                             <constraint firstItem="C4d-QL-xgx" firstAttribute="top" secondItem="AMp-qo-xo0" secondAttribute="bottom" constant="20" id="SsF-K8-AoX"/>
+                            <constraint firstItem="R8K-GB-JgS" firstAttribute="top" secondItem="auX-yd-BGL" secondAttribute="bottom" constant="15" id="a39-zr-HYy"/>
                             <constraint firstItem="C4d-QL-xgx" firstAttribute="width" secondItem="AMp-qo-xo0" secondAttribute="width" id="bG8-hY-Nfe"/>
                             <constraint firstItem="AMp-qo-xo0" firstAttribute="top" secondItem="iQm-rQ-JMi" secondAttribute="bottom" constant="20" id="cod-kw-OyF"/>
+                            <constraint firstItem="R8K-GB-JgS" firstAttribute="centerX" secondItem="GdS-2v-iTn" secondAttribute="centerX" id="kfd-ea-uio"/>
                             <constraint firstItem="auX-yd-BGL" firstAttribute="centerX" secondItem="GdS-2v-iTn" secondAttribute="centerX" id="lqU-Ad-Fpa"/>
                         </constraints>
                     </view>
@@ -110,6 +119,8 @@
                     </navigationItem>
                     <connections>
                         <outlet property="JuegoImageView" destination="AMp-qo-xo0" id="xsU-qJ-xUe"/>
+                        <outlet property="agregarActualizarBoton" destination="auX-yd-BGL" id="CLO-Kx-fp2"/>
+                        <outlet property="eliminarBoton" destination="R8K-GB-JgS" id="8Eo-J9-5NW"/>
                         <outlet property="tituloTextField" destination="C4d-QL-xgx" id="YYG-IS-aRf"/>
                     </connections>
                 </viewController>
