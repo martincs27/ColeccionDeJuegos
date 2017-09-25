@@ -13,6 +13,7 @@
 		E2EEEAFF1F705D3900B99719 /* Lab_06.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2EEEAFD1F705D3900B99719 /* Lab_06.xcdatamodeld */; };
 		E2EEEB011F705D3900B99719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2EEEB001F705D3900B99719 /* Assets.xcassets */; };
 		E2EEEB041F705D3900B99719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2EEEB021F705D3900B99719 /* LaunchScreen.storyboard */; };
+		E2EEEB0C1F70762D00B99719 /* JuegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EEEB0B1F70762D00B99719 /* JuegoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E2EEEB001F705D3900B99719 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2EEEB031F705D3900B99719 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2EEEB051F705D3900B99719 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2EEEB0B1F70762D00B99719 /* JuegoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JuegoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E2EEEAF61F705D3900B99719 /* AppDelegate.swift */,
 				E2EEEAF81F705D3900B99719 /* ViewController.swift */,
 				E2EEEAFA1F705D3900B99719 /* Main.storyboard */,
+				E2EEEB0B1F70762D00B99719 /* JuegoViewController.swift */,
 				E2EEEB001F705D3900B99719 /* Assets.xcassets */,
 				E2EEEB021F705D3900B99719 /* LaunchScreen.storyboard */,
 				E2EEEB051F705D3900B99719 /* Info.plist */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2EEEAF91F705D3900B99719 /* ViewController.swift in Sources */,
+				E2EEEB0C1F70762D00B99719 /* JuegoViewController.swift in Sources */,
 				E2EEEAF71F705D3900B99719 /* AppDelegate.swift in Sources */,
 				E2EEEAFF1F705D3900B99719 /* Lab_06.xcdatamodeld in Sources */,
 			);
